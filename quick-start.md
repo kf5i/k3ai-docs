@@ -10,12 +10,6 @@ Start by installing K3Ai with this:
 curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -
 ```
 
-Do you want to use Vagrant? We got you covered!
-
-```text
-curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install_vagrant | bash -
-```
-
 ### **Notes: sometimes things take longer than expected and you may see the error below:**
 
 ```text
@@ -26,5 +20,5 @@ Don't worry about that sometimes the installation takes a few minutes especially
 
 Still curious how this looks like? Here's a short demo:
 
-![](https://github.com/kf5i/k3ai-site/tree/ff082daef955d2d04f6a1f1705329373044f051b/.gitbook/assets/aio.gif)
+![k3ai in action](.gitbook/assets/demo.gif)
 

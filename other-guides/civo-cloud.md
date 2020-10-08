@@ -13,7 +13,7 @@ As a natural as it could be, we work perfectly on Civo so here it is the simples
 
 Below is the guide that demonstrates running Kubeflow-Pipelines on Civo Cloud
 
-[Install guide](https://www.civo.com/learn/running-kubeflow-pipelines)
+[**Install guide**](https://www.civo.com/learn/running-kubeflow-pipelines)\*\*\*\*
 
 A complete guide may be found [here](https://www.civo.com/learn/running-kubeflow-pipelines) but for the lazy ones we are building a single command.. stay tuned
 
