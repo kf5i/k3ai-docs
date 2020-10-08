@@ -11,3 +11,7 @@ description: >-
 
 As a natural as it could be, we work perfectly on Civo so here it is the simples guide ever to run our k3ai on it.
 
+ A complete guide may be found [here](https://www.civo.com/learn/running-kubeflow-pipelines) but for the lazy ones we are building a single command.. stay tuned
+
+
+
