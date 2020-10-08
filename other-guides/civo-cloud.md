@@ -11,3 +11,7 @@ description: >-
 
 As a natural as it could be, we work perfectly on Civo so here it is the simples guide ever to run our k3ai on it.
 
+Below is the guide that demonstrats running Kubeflow-Pipelines on Civo Cloud
+
+[Install guide](https://www.civo.com/learn/running-kubeflow-pipelines)
+
