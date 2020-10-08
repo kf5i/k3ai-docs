@@ -17,5 +17,3 @@ Below is the guide that demonstrates running Kubeflow-Pipelines on Civo Cloud
 
 A complete guide may be found [here](https://www.civo.com/learn/running-kubeflow-pipelines) but for the lazy ones we are building a single command.. stay tuned
 
-
-
