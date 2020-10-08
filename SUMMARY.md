@@ -12,3 +12,7 @@
 
 * [Hello-World](examples/hello-world.md)
 
+## other guides
+
+* [Civo Cloud](other-guides/civo-cloud.md)
+
