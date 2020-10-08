@@ -9,7 +9,7 @@ description: >-
 
 ## What is K3ai
 
-![k3ai in action](.gitbook/assets/aio.gif)
+![](.gitbook/assets/demo.gif)
 
 K3ai is a lightweight infrastructure in a box specifically built to install and configure AI tools and platforms to quickly experiment and/or run in production over edge devices.
 
@@ -19,7 +19,7 @@ Ready to experiment?
 curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -
 ```
 
-More curious?  [https://k3ai.gitbook.io/docs/](https://k3ai.gitbook.io/docs/)
+More curious? [https://k3ai.gitbook.io/docs/](https://k3ai.gitbook.io/docs/)
 
 ## Components of K3ai
 

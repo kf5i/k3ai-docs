@@ -12,5 +12,3 @@ Once you completed the pre-req's you may install everything whit the following c
 curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -s -- --gpu
 ```
 
-
-

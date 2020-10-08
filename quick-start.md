@@ -26,5 +26,5 @@ Don't worry about that sometimes the installation takes a few minutes especially
 
 Still curious how this looks like? Here's a short demo:
 
-![](.gitbook/assets/aio.gif)
+![](https://github.com/kf5i/k3ai-site/tree/ff082daef955d2d04f6a1f1705329373044f051b/.gitbook/assets/aio.gif)
 
