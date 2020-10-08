@@ -21,6 +21,8 @@ curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -
 
 More curious? [**https://kf5ai.gitbook.io/k3ai**](https://kf5ai.gitbook.io/k3ai/)**/**
 
+Look for more interaction? join our Slack channel ****[**here**](https://join.slack.com/t/kf5ikfai/shared_invite/zt-huh5ib1f-ZyBxqyBDKooGNvpd5_MoQQ)\*\*\*\*
+
 ## Components of K3ai
 
 Currently, we do install the following components \(the list is changing and growing\):
