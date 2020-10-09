@@ -20,3 +20,7 @@
 
 * [Build Plugins](contribute/build-plugins.md)
 
+## community
+
+* [Contributors](community/contributors.md)
+
