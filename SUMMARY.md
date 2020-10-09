@@ -16,3 +16,7 @@
 
 * [Civo Cloud](other-guides/civo-cloud.md)
 
+## contribute
+
+* [Build Plugins](contribute/build-plugins.md)
+
