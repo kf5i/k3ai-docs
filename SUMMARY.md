@@ -8,6 +8,7 @@
 
 * [GPU support](plugins/gpu-support.md)
 * [Kubeflow Pipelines](plugins/kubeflow-pipelines.md)
+* [Argo Workflows](plugins/argo-workflows.md)
 
 ## EXAMPLEs
 
