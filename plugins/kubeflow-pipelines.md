@@ -7,13 +7,13 @@ Kubeflow Pipelines is a platform for building and deploying portable, scalable m
 You only have to decide if you like **CPU** support:
 
 ```bash
-curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -s -- --cpu --plugin_kfpipelines
+curl -sfL https://get.k3ai.in | bash -s -- --cpu --plugin_kfpipelines
 ```
 
 or you prefer **GPU** support:
 
 ```bash
-curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -s -- --gpu --plugin_kfpipelines
+curl -sfL https://get.k3ai.in | bash -s -- --gpu --plugin_kfpipelines
 ```
 
 ### What is Kubeflow Pipelines? <a id="what-is-kubeflow-pipelines"></a>

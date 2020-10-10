@@ -9,6 +9,6 @@ Please follow this guide from NVIDIA to install the pre-requisites:
 Once you completed the pre-req's you may install everything whit the following command:
 
 ```text
-curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -s -- --gpu
+curl -sfL https://get.k3ai.in | bash -s -- --gpu
 ```
 

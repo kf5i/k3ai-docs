@@ -42,7 +42,7 @@ kubectl config --kubeconfig="civo-k3ai-kubeconfig"
 You're all set up one more thing and we have done:
 
 ```bash
- curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -s - --skipk3s --plugin_civo_kfpipelines
+ curl -sfL https://get.k3ai.in | bash -s - --skipk3s --plugin_civo_kfpipelines
 ```
 
 enjoy your k3ai on[ **https://civo.com**](https://civo.com)\*\*\*\*

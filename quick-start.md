@@ -7,7 +7,7 @@ If you like we also have a documentation website here: [https://k3ai.gitbook.io/
 Start by installing K3Ai with this:
 
 ```text
-curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -
+curl -sfL https://get.k3ai.in | bash -
 ```
 
 ### **Notes: sometimes things take longer than expected and you may see the error below:**

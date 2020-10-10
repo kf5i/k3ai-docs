@@ -5,13 +5,13 @@
 You only have to decide if you like **CPU** support:
 
 ```bash
-curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -s -- --cpu --plugin_argo_workflow
+curl -sfL https://get.k3ai.in | bash -s -- --cpu --plugin_argo_workflow
 ```
 
 or you prefer **GPU** support:
 
 ```bash
-curl -sfL https://github.com/kf5i/k3ai/releases/latest/download/install | bash -s -- --gpu--plugin_argo_workflow
+curl -sfL https://get.k3ai.in | bash -s -- --gpu--plugin_argo_workflow
 ```
 
 ### What is Argo Workflows?
