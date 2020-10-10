@@ -4,9 +4,10 @@
 * [Quick Start](quick-start.md)
 * [Remove k3ai](remove-k3ai.md)
 
-## Configuration Options
+## Plugins
 
-* [GPU support](configuration-options/gpu-support.md)
+* [GPU support](plugins/gpu-support.md)
+* [Kubeflow Pipelines](plugins/kubeflow-pipelines.md)
 
 ## EXAMPLEs
 
