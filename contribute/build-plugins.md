@@ -1,10 +1,10 @@
 # Build Plugins
 
-Build plugins for k3ai is very simple, this guide will drive you through the steps needed to build one and contribute to the project.
+Building plugins for k3ai is very simple. This guide will walk you through the steps required to build oa plugin and contribute to the project.
 
 The first step is to learn the structure of the plugins repository: [**https://github.com/kf5i/k3ai-plugins**](https://github.com/kf5i/k3ai-plugins)\*\*\*\*
 
-The repo is structured in a very simple way, for each plugin you have a corresponding folder named:
+The repo is structured in a very simple way. For each plugin you have a corresponding folder named:
 
 **plugin\_&lt;PLUGIN NAME&gt;**
 
@@ -19,7 +19,7 @@ _Notice the absence of an extension for the install file._
 
 The **plugin\_template**  contains a starting point for contributors.
 
-In a nutshell, the **install** file is a bash file where you may store your logic, as reference below the template install file.
+In a nutshell, the **install** file is a bash file where you can store your logic. See the reference template install file below.
 
 ```bash
 #!/bin/bash
