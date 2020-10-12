@@ -17,7 +17,7 @@ description: >-
   * Twitter: @GSantomaggio
   * Org: SUSE
 
-## Logo and Graphics creations
+## Design and documentation
 
 * Kenneth Wimer
   * GitHub: @kwwii
