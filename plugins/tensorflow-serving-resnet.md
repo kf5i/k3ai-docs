@@ -19,7 +19,7 @@ curl -sfL https://get.k3ai.in | bash -s -- --gpu --plugin_tfs-resnet
 ```
 
 {% hint style="info" %}
-Note: In order to differentiate between the various model in Tensorflo Serving not the "-" vs the "\_" in the plugin name
+Note: Please not the naming convention in the case of TensorFlow plugins 
 {% endhint %}
 
 ## Test the installation
