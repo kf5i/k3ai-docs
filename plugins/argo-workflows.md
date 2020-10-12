@@ -2,7 +2,7 @@
 
 ## Quick Start Guide
 
-You only have to decide if you like **CPU** support:
+You only have to decide if you want **CPU** support:
 
 ```bash
 curl -sfL https://get.k3ai.in | bash -s -- --cpu --plugin_argo_workflow
