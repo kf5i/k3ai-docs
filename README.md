@@ -19,7 +19,7 @@ Ready to experiment?
 curl -sfL https://get.k3ai.in | bash -
 ```
 
-Curious? [**https://docs.k3ai.in**](https://docs.k3ai.in)\*\*\*\*
+Curious? Checkout the documentation at [**https://docs.k3ai.in**](https://docs.k3ai.in)
 
 Looking for more interaction? join our Slack channel ****[**here**](https://join.slack.com/t/kf5ikfai/shared_invite/zt-huh5ib1f-ZyBxqyBDKooGNvpd5_MoQQ)\*\*\*\*
 
