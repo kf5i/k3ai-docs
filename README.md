@@ -1,7 +1,7 @@
 ---
 description: >-
   K3Ai is a lightweight infrastructure-in-a-box ready to run on top of edge and
-  IoT devices  filled in with a set of Artificial Intelligence platforms and
+  IoT devices which provides a set of Artificial Intelligence platforms and
   solutions
 ---
 
@@ -11,7 +11,7 @@ description: >-
 
 ![](.gitbook/assets/demo.gif)
 
-K3ai is a lightweight infrastructure in a box specifically built to install and configure AI tools and platforms to quickly experiment and/or run in production over edge devices.
+K3ai is a lightweight infrastructure-in-a-box specifically built to install and configure AI tools and platforms to quickly experiment and/or run in production over edge devices.
 
 Ready to experiment?
 
@@ -19,13 +19,13 @@ Ready to experiment?
 curl -sfL https://get.k3ai.in | bash -
 ```
 
-More curious? [**https://docs.k3ai.in**](https://docs.k3ai.in)\*\*\*\*
+Curious? [**https://docs.k3ai.in**](https://docs.k3ai.in)\*\*\*\*
 
-Look for more interaction? join our Slack channel ****[**here**](https://join.slack.com/t/kf5ikfai/shared_invite/zt-huh5ib1f-ZyBxqyBDKooGNvpd5_MoQQ)\*\*\*\*
+Looking for more interaction? join our Slack channel ****[**here**](https://join.slack.com/t/kf5ikfai/shared_invite/zt-huh5ib1f-ZyBxqyBDKooGNvpd5_MoQQ)\*\*\*\*
 
 ## Components of K3ai
 
-Currently, we do install the following components \(the list is changing and growing\):
+Currently, we install the following components \(the list is changing and growing\):
 
 * Kubernetes based on K3s from Rancher: [https://k3s.io/](https://k3s.io/)
 * Kubeflow pipelines: [https://github.com/kubeflow/pipelines](https://github.com/kubeflow/pipelines)
