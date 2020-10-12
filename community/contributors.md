@@ -21,6 +21,7 @@ description: >-
 
 * Kenneth Wimer
   * GitHub: @kwwii
+  * Twitter: @kwwii
   * Org: SUSE
 
 ## Contributors
