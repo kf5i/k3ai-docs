@@ -9,13 +9,13 @@ description: >-
 
 [In 2019 we went all in and took Civo in a new direction](https://www.civo.com/blog/a-civo-2019-retrospective-how-we-got-here-and-what-s-next), launching the world’s first k3s-powered, managed Kubernetes service into beta.
 
-As a natural as it could be, we work perfectly on Civo so here it is the simples guide ever to run our k3ai on it, three steps and your k3ai is ready!
+As easy as can be, K3ai works perfectly on Civo. Here it is the **simplest guide ever** to run k3ai on Civo - three steps and your k3ai is ready!
 
 ### Installing k3ai on Civo
 
-Ready? It will require no more than 5 minutes to do it!
+Ready? It requires less than 5 minutes!
 
-You have to have an account on Civo.com, to do so simply register on Civo here: 
+You'll need an account on Civo.com. To do so simply register on Civo here: 
 
 [**https://www.civo.com/signup**](https://www.civo.com/signup)\*\*\*\*
 
@@ -39,7 +39,7 @@ kubectl config --kubeconfig="civo-k3ai-kubeconfig"
 
 ### Step 3
 
-You're all set up one more thing and we have done:
+One last thing and then we're done:
 
 ```bash
  curl -sfL https://get.k3ai.in | bash -s - --skipk3s --plugin_civo_kfpipelines
