@@ -9,6 +9,7 @@
 * [GPU support](plugins/gpu-support.md)
 * [Kubeflow Pipelines](plugins/kubeflow-pipelines.md)
 * [Argo Workflows](plugins/argo-workflows.md)
+* [Tensorflow Serving - ResNet](plugins/tensorflow-serving-resnet.md)
 
 ## EXAMPLEs
 
@@ -25,4 +26,5 @@
 ## community
 
 * [Contributors](community/contributors.md)
+* [Seen in the wild](community/seen-in-the-wild.md)
 

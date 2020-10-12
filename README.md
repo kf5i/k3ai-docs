@@ -21,7 +21,7 @@ curl -sfL https://get.k3ai.in | bash -
 
 Curious? Checkout the documentation at [**https://docs.k3ai.in**](https://docs.k3ai.in)
 
-Looking for more interaction? join our Slack channel ****[**here**](https://join.slack.com/t/kf5ikfai/shared_invite/zt-huh5ib1f-ZyBxqyBDKooGNvpd5_MoQQ)\*\*\*\*
+Looking for more interaction? join our Slack channel **\*\*\[**here_\*\]\(_[https://join.slack.com/t/kf5ikfai/shared\_invite/zt-huh5ib1f-ZyBxqyBDKooGNvpd5\_MoQQ\)\](https://join.slack.com/t/kf5ikfai/shared_invite/zt-huh5ib1f-ZyBxqyBDKooGNvpd5_MoQQ%29\)\*\*\*
 
 ## Components of K3ai
 

@@ -8,72 +8,20 @@ The repo is structured in a very simple way. For each plugin you have a correspo
 
 **plugin\_&lt;PLUGIN NAME&gt;**
 
-where **&lt;PLUGIN NAME&gt;** is the name of your plugin \(i.e.: plugin\_kfpipelines identify the Kubeflow pipelines based on default  Argo workflows engine\).
+where **&lt;PLUGIN NAME&gt;** is the name of your plugin \(i.e.: plugin\_kfpipelines identify the Kubeflow pipelines based on default Argo workflows engine\).
 
 The plugin folder should contain two files:
 
 * README.md
 * install
 
-_Notice the absence of an extension for the install file._ 
+_Notice the absence of an extension for the install file._
 
-The **plugin\_template**  contains a starting point for contributors.
+The **plugin\_template** contains a starting point for contributors.
 
 In a nutshell, the **install** file is a bash file where you can store your logic. See the reference template install file below.
 
 ```bash
-#!/bin/bash
-
-#########################################
-### K3ai (keɪ3ai) Plugins - Install Template
-### https://github.com/kf5i/k3ai
-### Alessandro Festa @bringyourownai
-### Gabriele Santomaggio @gsantomaggio
-######################################### 
-
-### do not change this setion ###
-info()
-{
-    echo '[INFO] ' "$@"
-}
-
-infoL()
-{
-    echo -en '[INFO] ' "$@\n"
-}
-
-sleep_cursor()
-{
- chars="/-\|"
- for (( z=0; z<7; z++ )); do
-   for (( i=0; i<${#chars}; i++ )); do
-    sleep 0.5
-    echo -en "${chars:$i:1}" "\r"
-  done
-done
-}
-
-
-wait() 
-{
-status=1
-infoL "Testing.." $1.$2  
-while [ : ]
-  do
-    sleep_cursor &
-    kubectl wait --for condition=available --timeout=14s deploy -l  $1   -n $2
-    status=$?
-    
-    if [ $status -ne 0 ]
-    then 
-      infoL "$1 isn't ready yet. This may take a few minutes..."
-      sleep_cursor
-    else
-      break  
-    fi 
-  done
-}
-
 #######
 ### Kubeflow pipelines login as example, change it accordingly with your needs
 < TEMPLATE NAME >_install(){
@@ -129,7 +77,7 @@ EOF
         namespace: kubeflow
         annotations:
           nginx.ingress.kubernetes.io/rewrite-target: /$2
-          
+
       spec:
         ingressClassName: "traefik-lb"
         rules:

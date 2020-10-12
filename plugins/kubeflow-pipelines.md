@@ -2,7 +2,7 @@
 
 Kubeflow Pipelines is a platform for building and deploying portable, scalable machine learning \(ML\) workflows based on Docker containers.
 
-### Quickstart <a id="quickstart"></a>
+## Quick Start Guide
 
 You only have to decide if you want **CPU** support:
 
@@ -16,7 +16,7 @@ or if you prefer **GPU** support:
 curl -sfL https://get.k3ai.in | bash -s -- --gpu --plugin_kfpipelines
 ```
 
-### What is Kubeflow Pipelines? <a id="what-is-kubeflow-pipelines"></a>
+## What is Kubeflow Pipelines? <a id="what-is-kubeflow-pipelines"></a>
 
 The Kubeflow Pipelines platform consists of:
 

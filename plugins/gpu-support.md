@@ -1,6 +1,8 @@
 # GPU support
 
-To install a GPU enabled cluster there are few mandatory steps to prepare in advance.
+## Quick Start Guide
+
+To install a GPU-enabled cluster there are few mandatory steps to prepare in advance.
 
 Please follow this guide from NVIDIA to install the pre-requisites:
 

@@ -11,15 +11,15 @@ description: >-
 
 As easy as can be, K3ai works perfectly on Civo. Here it is the **simplest guide ever** to run k3ai on Civo - three steps and your k3ai is ready!
 
-### Installing k3ai on Civo
+## Installing k3ai on Civo
 
 Ready? It requires less than 5 minutes!
 
-You'll need an account on Civo.com. To do so simply register on Civo here: 
+You'll need an account on Civo.com. To do so simply register on Civo here:
 
 [**https://www.civo.com/signup**](https://www.civo.com/signup)\*\*\*\*
 
-### Step 1
+## Step 1
 
 Launch your k3s cluster using the default options \(Traefik and Metric-server selected\)
 
@@ -29,15 +29,15 @@ Wait for the instance to finish the deployment
 
 ![k3s deployment](../.gitbook/assets/4.png)
 
-### Step 2
+## Step 2
 
-Download the **kubeconfig** file,  move it to your preferred location, and set your environment to use it:
+Download the **kubeconfig** file, move it to your preferred location, and set your environment to use it:
 
 ```bash
 kubectl config --kubeconfig="civo-k3ai-kubeconfig"
 ```
 
-### Step 3
+## Step 3
 
 One last thing and then we're done:
 
