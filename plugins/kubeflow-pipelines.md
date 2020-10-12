@@ -4,13 +4,13 @@ Kubeflow Pipelines is a platform for building and deploying portable, scalable m
 
 ### Quickstart <a id="quickstart"></a>
 
-You only have to decide if you like **CPU** support:
+You only have to decide if you want **CPU** support:
 
 ```bash
 curl -sfL https://get.k3ai.in | bash -s -- --cpu --plugin_kfpipelines
 ```
 
-or you prefer **GPU** support:
+or if you prefer **GPU** support:
 
 ```bash
 curl -sfL https://get.k3ai.in | bash -s -- --gpu --plugin_kfpipelines
@@ -23,7 +23,7 @@ The Kubeflow Pipelines platform consists of:
 * A user interface \(UI\) for managing and tracking experiments, jobs, and runs.
 * An engine for scheduling multi-step ML workflows.
 * An SDK for defining and manipulating pipelines and components.
-* Notebooks for interacting with the system using the SDK.
+* Notebooks for interacting with the system using an SDK.
 
 The following are the goals of Kubeflow Pipelines:
 
