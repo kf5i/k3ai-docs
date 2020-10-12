@@ -18,10 +18,6 @@ GPU support:
 curl -sfL https://get.k3ai.in | bash -s -- --gpu --plugin_tfs-resnet
 ```
 
-{% hint style="info" %}
-Note: Please not the naming convention in the case of TensorFlow plugins 
-{% endhint %}
-
 ## Test the installation
 
 For a full explanation of how to use Tensorflow Serving please take a look at the documentation site: 
