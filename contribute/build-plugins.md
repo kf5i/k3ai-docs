@@ -21,10 +21,67 @@ The **plugin\_template** contains a starting point for contributors.
 
 In a nutshell, the **install** file is a bash file where you can store your logic. See the reference template install file below.
 
+The **install** is organized in three parts. The initial part is useful to check container status and pass pieces of information in the terminal.
+
+```bash
+#!/bin/bash
+
+#########################################
+### K3ai (keɪ3ai) Plugins - Tensorflow Serving
+### https://github.com/kf5i/k3ai
+### Alessandro Festa @bringyourownai
+### Gabriele Santomaggio @gsantomaggio
+######################################### 
+
+info()
+{
+    echo '[INFO] ' "$@"
+}
+
+infoL()
+{
+    echo -en '[INFO] ' "$@\n"
+}
+
+sleep_cursor()
+{
+ chars="/-\|"
+ for (( z=0; z<7; z++ )); do
+   for (( i=0; i<${#chars}; i++ )); do
+    sleep 0.5
+    echo -en "${chars:$i:1}" "\r"
+  done
+done
+}
+
+
+wait() 
+{
+status=1
+infoL "Testing.." $1.$2  
+while [ : ]
+  do
+    sleep_cursor &
+    kubectl wait --for condition=ready --timeout=14s pod -l  $1   -n $2
+    status=$?
+    
+    if [ $status -ne 0 ]
+    then 
+      infoL "$1 isn't ready yet. This may take a few minutes..."
+      sleep_cursor
+    else
+      break  
+    fi 
+  done
+}
+```
+
+The core of the plugin is in the **install\(\)** function
+
 ```bash
 #######
 ### Kubeflow pipelines login as example, change it accordingly with your needs
-< TEMPLATE NAME >_install(){
+install(){
     info "Installing <TEMPLATE NAME> crd"
     export PIPELINE_VERSION=1.0.1
     kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=$PIPELINE_VERSION"
@@ -88,13 +145,17 @@ EOF
                 serviceName: "ml-pipeline-ui"
                 servicePort: 80
 EOF
+```
 
+the last part is where you call back the  **install** function
+
+```bash
 sleep_cursor
 
 IP=$(kubectl get service/traefik -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n kube-system)
 info "pipelines UI: http://"$IP 
 }
 
-#######
+install
 ```
 
