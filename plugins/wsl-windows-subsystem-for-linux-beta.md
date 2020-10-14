@@ -40,6 +40,8 @@ The following plugins are immediately supported:
 
 ## Troubleshooting
 
+#### Restart WSL
+
 If you re-login in your WSL session after a "wsl --shutdown" or simply because you restarted/shutdown your computer the k3ai environment will not automatically restart.
 
 We created a utility file for you to re-start k3ai every time. In order to do so execute in WSL:
@@ -49,4 +51,14 @@ startk3s
 ```
 
 wait for a couple of minutes for the cluster to restart all the pods and you're good to go.
+
+#### 
+
+#### The connection to the server localhost:8080 was refused
+
+If the above error happens please use the following command to install k3ai
+
+```bash
+curl -sfL https://raw.githubusercontent.com/kf5i/k3ai/master/install | INSTALL_K3S_BIN_DIR=/usr/bin bash -s -- --wsl --pipelines
+```
 
