@@ -10,14 +10,15 @@
 * [Kubeflow Pipelines](plugins/kubeflow-pipelines.md)
 * [Argo Workflows](plugins/argo-workflows.md)
 * [Tensorflow Serving - ResNet](plugins/tensorflow-serving-resnet.md)
-
-## EXAMPLEs
-
-* [Hello-Start](examples/hello-start.md)
+* [WSL \(Windows Subsystem for Linux\) \[Beta\]](plugins/wsl-windows-subsystem-for-linux-beta.md)
 
 ## other guides
 
 * [Civo Cloud](other-guides/civo-cloud.md)
+
+## EXAMPLEs
+
+* [Hello-Start](examples/hello-start.md)
 
 ## contribute
 
