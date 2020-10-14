@@ -4,7 +4,7 @@ Yep, you get it right we also have WSL support!
 
 {% embed url="https://github.com/kf5i/k3ai/pull/20" caption="" %}
 
-This feature is currently in **\[beta**\] so we are looking for initial feedback. If you have any issue please let us know: [**open issue**](https://github.com/kf5i/k3ai/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)\*\*\*\*
+This feature is currently in **\[beta**\] so we are looking for initial feedback. If you have any issue please let us know: [**open issue**](https://github.com/kf5i/k3ai/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)
 
 **Note: GPU is not currently supported in k3ai withing WSL. The reason is simply that GPU capability is still in development by NVIDIA and Microsoft so we will wait for it to reach a more stable grade.** 
 
@@ -14,7 +14,7 @@ The Windows Subsystem for Linux lets developers run a GNU/Linux environment -- i
 
 ### Step 1
 
-Install any Linux distro supported in WSL. For a quick how-to please follow the guide at [**https://docs.microsoft.com/en-us/windows/wsl/install-win10**](https://docs.microsoft.com/en-us/windows/wsl/install-win10)\*\*\*\*
+Install any Linux distro supported in WSL. For a quick how-to please follow the guide at [**https://docs.microsoft.com/en-us/windows/wsl/install-win10**](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 ### Step 2
 
