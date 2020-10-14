@@ -20,5 +20,3 @@ Don't worry! Sometimes the installation takes a few minutes, especially the Vagr
 
 Still curious? Here's a short demo:
 
-![k3ai in action](.gitbook/assets/demo.gif)
-

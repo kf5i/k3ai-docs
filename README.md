@@ -9,7 +9,7 @@ description: >-
 
 ## What is K3ai
 
-![](.gitbook/assets/demo.gif)
+![](.gitbook/assets/aio.gif)
 
 K3ai is a lightweight infrastructure-in-a-box specifically built to install and configure AI tools and platforms to quickly experiment and/or run in production over edge devices.
 
