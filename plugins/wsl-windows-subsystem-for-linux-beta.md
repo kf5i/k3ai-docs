@@ -19,7 +19,7 @@ Install any Linux distro supported in WSL. For a quick how-to please follow the 
 Once ready simply run the following command:
 
 ```bash
-curl -sfL https://raw.githubusercontent.com/kf5i/k3ai/wsl/install | bash -s -- --wsl --pipelines
+curl -sfL https://raw.githubusercontent.com/kf5i/k3ai/master/install | bash -s -- --wsl --pipelines
 ```
 
 **Note:** the command above is slightly different from the other commands we typically use. It will change to the usual once the feature will be merged in the main code.
