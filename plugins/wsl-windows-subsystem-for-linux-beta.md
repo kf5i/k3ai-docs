@@ -6,9 +6,9 @@ Yep, you get it right we also have WSL support!
 
 This feature is currently in **\[beta**\] so we are looking for initial feedback. If you have any issue please let us know: [**open issue**](https://github.com/kf5i/k3ai/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)\*\*\*\*
 
-{% hint style="warning" %}
+{% include style="warning"
 **Note: GPU is not currently supported in k3ai withing WSL. The reason is simply that GPU capability is still in development by NVIDIA and Microsoft so we will wait for it to reach a more stable grade.**
-{% endhint %}
+%}
 
 ## Quick Start
 
@@ -26,9 +26,9 @@ Once ready simply run the following command:
 curl -sfL https://raw.githubusercontent.com/kf5i/k3ai/wsl/install | bash -s -- --wsl --pipelines
 ```
 
-{% hint style="success" %}
+{% include style="warning"
 **Note:** the command above is slightly different from the other commands we typically use. It will change to the usual once the feature will be merged in the main code.
-{% endhint %}
+%}
 
 ### \(Optional\) Step 3
 
