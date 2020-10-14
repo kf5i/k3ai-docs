@@ -6,7 +6,9 @@ Yep, you get it right we also have WSL support!
 
 This feature is currently in **\[beta**\] so we are looking for initial feedback. If you have any issue please let us know: [**open issue**](https://github.com/kf5i/k3ai/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)
 
-**Note: GPU is not currently supported in k3ai withing WSL. The reason is simply that GPU capability is still in development by NVIDIA and Microsoft so we will wait for it to reach a more stable grade.** 
+This feature is currently in **\[beta**\] so we are looking for initial feedback. If you have any issue please let us know: [**open issue**](https://github.com/kf5i/k3ai/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)
+
+**Note: GPU is not currently supported in k3ai withing WSL. The reason is simply that GPU capability is still in development by NVIDIA and Microsoft so we will wait for it to reach a more stable grade.**
 
 ## Quick Start
 
