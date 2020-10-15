@@ -21,20 +21,9 @@ But those AI platforms, by inheritance, have a degree of complexity. Let take at
 >
 > Kubeflow project - [https://www.kubeflow.org/docs/about/use-cases/](https://www.kubeflow.org/docs/about/use-cases/)
 
-Let's take another AI platform definition:
-
-> Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Argo Workflows is implemented as a Kubernetes CRD.
->
-> * Define workflows where each step in the workflow is a container.
-> * Model multi-step workflows as a sequence of tasks or capture the dependencies between tasks using a graph \(DAG\).
-> * Easily run compute intensive jobs for machine learning or data processing in a fraction of the time using Argo Workflows on Kubernetes.
-> * Run CI/CD pipelines natively on Kubernetes without configuring complex software development products.
->
-> Argo Workflows - [https://argoproj.github.io/projects/argo/](https://argoproj.github.io/projects/argo/)
-
 See the elephant in the room? We all have to struggle with the complexity of a process that looks like the one below
 
-![](.gitbook/assets/aiprocess%20%281%29.png)
+![Click on the image to zoom in/out](.gitbook/assets/aiprocess%20%281%29.png)
 
 So here the first problem we identified \(yes I said first\): Remove the complexity and give you a straight solution.
 
@@ -57,7 +46,7 @@ Data Engineers, DevOps or in a more fancy definition AIOps have to face the chal
 * Must be **AVAILABLE** everywhere no matter if it's on-prem, on-cloud, or in the remote universe
 * Must be  **REPRODUCIBLE** you want to be able to replicate the scenario again and again without having every time to re-configure things from scratch 
 
-![The AiOps loop](.gitbook/assets/aiops.png)
+![Click on the image to zoom in/out](.gitbook/assets/aiops.png)
 
 ##  Solving the problem
 
