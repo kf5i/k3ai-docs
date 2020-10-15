@@ -1,6 +1,7 @@
 # Table of contents
 
 * [K3ai \(keɪ3ai\)](README.md)
+* [What we try solve \(a.k.a Our Goals\) - DRAFT](what-we-try-solve-a.k.a-our-goals.md)
 * [Quick Start](quick-start.md)
 * [Remove k3ai](remove-k3ai.md)
 
@@ -28,5 +29,4 @@
 
 * [Contributors](community/contributors.md)
 * [Seen in the wild](community/seen-in-the-wild.md)
-* [What we try solve \(a.k.a Our Goals\) - DRAFT](community/what-we-try-solve-a.k.a-our-goals.md)
 
