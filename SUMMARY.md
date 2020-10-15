@@ -28,4 +28,5 @@
 
 * [Contributors](community/contributors.md)
 * [Seen in the wild](community/seen-in-the-wild.md)
+* [What we try solve \(a.k.a Our Goals\) - DRAFT](community/what-we-try-solve-a.k.a-our-goals.md)
 
