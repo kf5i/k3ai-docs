@@ -1,7 +1,7 @@
 # Table of contents
 
 * [K3ai \(keɪ3ai\)](README.md)
-* [What we try solve \(a.k.a Our Goals\) - DRAFT](what-we-try-solve-a.k.a-our-goals.md)
+* [What we try to solve \(a.k.a Our Goals\)](what-we-try-solve-a.k.a-our-goals.md)
 * [Quick Start](quick-start.md)
 * [Remove k3ai](remove-k3ai.md)
 

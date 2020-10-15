@@ -1,11 +1,11 @@
 ---
 description: >-
   "The great danger for most of us lies not in setting our aim too high and
-  falling short; but in setting our aim too low, and achieving our mark."
+  falling short, but in setting our aim too low, and achieving our mark."
   –Michelangelo
 ---
 
-# What we try solve \(a.k.a Our Goals\) - DRAFT
+# What we try to solve \(a.k.a Our Goals\)
 
 ## Identify the problem
 
