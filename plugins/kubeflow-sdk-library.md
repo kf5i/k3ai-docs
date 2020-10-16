@@ -122,7 +122,7 @@ import json
 
 # 'host' is your Kubeflow Pipelines API server's host address.
 
-host="http://<K3AI IP>/"
+host="http://ml-pipeline-ui.kubeflow/"
 
 # 'pipeline_name' is the name of the pipeline you want to list. We provide you
 #  here a pre-set name to test immediately
