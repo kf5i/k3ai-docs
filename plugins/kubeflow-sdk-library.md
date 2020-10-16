@@ -32,7 +32,7 @@ Once the installer has finished please proceed to the "How to use KFP SDK" secti
 We leverage Jupyter Notebooks to provide a pre-installed kfp environment so that one may immediately experiment with this. 
 
 ```text
-curl -sfL https://get.k3ai.in | bash -s --  --pipelines --plugin_jupyter-minimal
+curl -sfL https://get.k3ai.in | bash -s --  --cpu --pipelines --plugin_jupyter-minimal
 ```
 
 If you already deployed the pipelines simply run:
