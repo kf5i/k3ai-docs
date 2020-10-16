@@ -41,6 +41,12 @@ If you already deployed the pipelines simply run:
 curl -sfL https://get.k3ai.in | bash -s -- --skipk3s --plugin_jupyter-minimal
 ```
 
+If you are using **WSL** 
+
+```text
+curl -sfL https://get.k3ai.in | bash -s --  --wsl --pipelines --plugin_jupyter-minimal
+```
+
 Once the installer has finished please proceed to the "How to use KFP SDK" section.
 
 ## How to use KFP SDK
