@@ -14,7 +14,7 @@
 * [Argo Workflows](plugins/argo-workflows.md)
 * [Tensorflow Serving - ResNet](plugins/tensorflow-serving-resnet.md)
 * [WSL \(Windows Subsystem for Linux\)](plugins/wsl-windows-subsystem-for-linux-beta.md)
-* [Jupyter Notebook](plugins/untitled.md)
+* [Jupyter Notebook](plugins/jupyter-notebook.md)
 
 ## other guides
 

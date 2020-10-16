@@ -15,9 +15,7 @@ We offer two different way to consume kfp within k3ai:
 
 ### Step 1
 
-Please check you have `virtualenv` installed on your machine. Depending on the OS you are using you may use different approaches. Please follow the official guides to install `virtualenv` at:
-
-{% embed url="https://virtualenv.pypa.io/en/latest/installation.html" %}
+Please check you have `virtualenv` installed on your machine. Depending on the OS you are using you may use different approaches. Please follow the official guides to install `virtualenv` at [**https://virtualenv.pypa.io/en/latest/installation.html**](https://virtualenv.pypa.io/en/latest/installation.html)\*\*\*\*
 
 ### **Step 2**
 
@@ -34,7 +32,7 @@ Once the installer has finished please proceed to the "How to use KFP SDK" secti
 We leverage Jupyter Notebooks to provide a pre-installed kfp environment so that one may immediately experiment with this. 
 
 ```text
-curl -sfL https://get.k3ai.in | bash -s --  --plugin_kfpipelines --plugin_jupyter-minimal
+curl -sfL https://get.k3ai.in | bash -s --  --pipelines --plugin_jupyter-minimal
 ```
 
 If you already deployed the pipelines simply run:
