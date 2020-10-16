@@ -1,8 +1,6 @@
-# WSL \(Windows Subsystem for Linux\) \[Beta\]
+# WSL \(Windows Subsystem for Linux\)
 
 #### Yep, you get it right we also have WSL support!
-
-This feature is currently in **\[beta**\] so we are looking for initial feedback. If you have any issue please let us know: [**open issue**](https://github.com/kf5i/k3ai/issues/new?assignees=&labels=bug%2C+needs-triage&template=bug_report.md&title=)\*\*\*\*
 
 **Note: GPU is not currently supported in k3ai withing WSL. The reason is simply that GPU capability is still in development by NVIDIA and Microsoft so we will wait for it to reach a more stable grade.**
 
@@ -59,6 +57,6 @@ wait for a couple of minutes for the cluster to restart all the pods and you're 
 If the above error happens please use the following command to install k3ai
 
 ```bash
-curl -sfL https://raw.githubusercontent.com/kf5i/k3ai/master/install | INSTALL_K3S_BIN_DIR=/usr/bin bash -s -- --wsl --pipelines
+curl -sfL https://get.k3ai.in | INSTALL_K3S_BIN_DIR=/usr/bin bash -s -- --wsl --pipelines
 ```
 

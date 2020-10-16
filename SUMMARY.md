@@ -10,9 +10,11 @@
 
 * [GPU support](plugins/gpu-support.md)
 * [Kubeflow Pipelines](plugins/kubeflow-pipelines.md)
+* [Kubeflow SDK library](plugins/kubeflow-sdk-library.md)
 * [Argo Workflows](plugins/argo-workflows.md)
 * [Tensorflow Serving - ResNet](plugins/tensorflow-serving-resnet.md)
-* [WSL \(Windows Subsystem for Linux\) \[Beta\]](plugins/wsl-windows-subsystem-for-linux-beta.md)
+* [WSL \(Windows Subsystem for Linux\)](plugins/wsl-windows-subsystem-for-linux-beta.md)
+* [Jupyter Notebook](plugins/untitled.md)
 
 ## other guides
 
