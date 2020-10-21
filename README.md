@@ -1,6 +1,6 @@
 # K3ai \(keɪ3ai\)
 
-## What's K3ai?
+## What is K3ai?
 
 K3ai is a lightweight infrastructure-in-a-box specifically built to install and configure AI tools and platforms to quickly experiment and/or run in production over edge devices.
 
