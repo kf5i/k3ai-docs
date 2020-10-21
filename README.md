@@ -13,13 +13,11 @@ description: >-
 
 K3ai is a lightweight infrastructure-in-a-box specifically built to install and configure AI tools and platforms to quickly experiment and/or run in production over edge devices.
 
-Ready to experiment?
+## Ready to experiment?
 
 ```text
 curl -sfL https://get.k3ai.in | bash -
 ```
-
-Curious? Checkout the documentation at [**https://docs.k3ai.in**](https://docs.k3ai.in)
 
 Looking for more interaction? join our Slack channel [**here**](https://join.slack.com/t/kf5ikfai/shared_invite/zt-huh5ib1f-ZyBxqyBDKooGNvpd5_MoQQ)\*\*\*\*
 
