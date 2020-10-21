@@ -1,10 +1,3 @@
----
-description: >-
-  K3Ai is a lightweight infrastructure-in-a-box ready to run on top of edge and
-  IoT devices which provides a set of Artificial Intelligence platforms and
-  solutions
----
-
 # K3ai \(keɪ3ai\)
 
 ## What is K3ai
