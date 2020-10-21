@@ -5,7 +5,7 @@ description: >-
   –Michelangelo
 ---
 
-# What we try to solve \(a.k.a Our Goals\)
+# What we are trying to solve \(a.k.a Our Goals\)
 
 ## Identify the problem
 
