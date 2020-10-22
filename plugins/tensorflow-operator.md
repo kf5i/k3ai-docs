@@ -1,3 +1,7 @@
+---
+description: Kubeflow Tensorflow-Job Training Operator
+---
+
 # Tensorflow Operator
 
 TFJob provides a Kubernetes custom resource that makes it easy to run distributed or non-distributed TensorFlow jobs on Kubernetes.
