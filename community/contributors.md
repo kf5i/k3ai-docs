@@ -30,4 +30,8 @@ description: >-
   * Github: @saiyam1814
   * Twitter: @SaiyamPathak
   * Org: CIVO Cloud
+* Harsimran Singh Maan
+  * Github: @harsimranmaan
+  * Author of: Splunk ML Environment \(SMLE\) Labs Beta
+  * Org: Splunk 
 
