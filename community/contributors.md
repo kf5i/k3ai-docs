@@ -19,18 +19,18 @@ description: >-
 
 ## Design and documentation
 
-* Kenneth Wimer
+* **Kenneth Wimer**
   * GitHub: @kwwii
   * Twitter: @kwwii
   * Org: SUSE
 
 ## Contributors
 
-* Saiyam Pathak
+* **Saiyam Pathak**
   * Github: @saiyam1814
   * Twitter: @SaiyamPathak
   * Org: CIVO Cloud
-* Harsimran Singh Maan
+* **Harsimran Singh Maan**
   * Github: @harsimranmaan
   * Author of: Splunk ML Environment \(SMLE\) Labs Beta
   * Org: Splunk 
