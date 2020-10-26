@@ -1,10 +1,10 @@
 # Jupyter Notebook
 
-Project Jupyter exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages. - ****[**https://jupyter.org/**](https://jupyter.org/)\*\*\*\*
+Project Jupyter exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages. - **\*\*\[**[https://jupyter.org/\*\*\]\(https://jupyter.org/\)\*\*\*\*](https://jupyter.org/**]%28https://jupyter.org/%29****)
 
 We do support the current list of Jupyter Stacks as indicated in:
 
- [**https://jupyter-docker-stacks.readthedocs.io/**](https://jupyter-docker-stacks.readthedocs.io/)\*\*\*\*
+[**https://jupyter-docker-stacks.readthedocs.io/**](https://jupyter-docker-stacks.readthedocs.io/)\*\*\*\*
 
 In order to run Jupyter Notebooks just run the following command:
 
@@ -25,6 +25,6 @@ The following notebooks plugins are available:
 Note: all Jupyter Notebooks container Kubeflow SDK \(kfp\) library to interact with Kubeflow pipelines. In order to install pipelines and Jupyter at the same time use:
 
 ```bash
-curl -sfL https://get.k3ai.in | bash -s -- --plugin_jupyter-<YOUR SELECTED FLAVOR> --plugin_kfpipelines 
+curl -sfL https://get.k3ai.in | bash -s -- --plugin_jupyter-<YOUR SELECTED FLAVOR> --plugin_kfpipelines
 ```
 

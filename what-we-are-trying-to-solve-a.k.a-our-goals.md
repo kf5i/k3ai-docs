@@ -9,7 +9,7 @@ description: >-
 
 ## Identify the problem
 
-Artificial Intelligence platforms are complex.  They combine a multitude of tools and frameworks that help Data Scientist and Data Engineers to solve the problem of building end-to-end pipelines.
+Artificial Intelligence platforms are complex. They combine a multitude of tools and frameworks that help Data Scientist and Data Engineers to solve the problem of building end-to-end pipelines.
 
 But those AI platforms, by inheritance, have a degree of complexity. Let take at the use case of some of them:
 
@@ -34,11 +34,11 @@ Now there are plenty of alternatives when it comes to the infrastructure \(local
 * Docker for Windows  \(Kubernetes\)
 * MicroK8s
 
-And some of them even allow you to install some platforms like Kubeflow but.. could you **cherry-picking** AI tools and/or solutions and running them on top of an infrastructure that does not suck up your entire laptop RAM?  Let say you start from learning the basics of training a model on different platforms and later move to learn serving models. You won't have everything running but move from one configuration to the other quickly.
+And some of them even allow you to install some platforms like Kubeflow but.. could you **cherry-picking** AI tools and/or solutions and running them on top of an infrastructure that does not suck up your entire laptop RAM? Let say you start from learning the basics of training a model on different platforms and later move to learn serving models. You won't have everything running but move from one configuration to the other quickly.
 
 ## Identify the other problem
 
-If experimentation is one face of the coin the other is using K3ai in the context of CI/CD. 
+If experimentation is one face of the coin the other is using K3ai in the context of CI/CD.
 
 Data Engineers, DevOps or in a more fancy definition AIOps have to face the challenge of building infrastructure pipelines that satisfy the following requirements:
 
@@ -48,7 +48,7 @@ Data Engineers, DevOps or in a more fancy definition AIOps have to face the chal
 
 ![Click on the image to zoom in/out](.gitbook/assets/aiops.png)
 
-##  Solving the problem
+## Solving the problem
 
 K3ai goal is to provide a micro-infrastructure that removes the complexity of the installation, configuration, and execution of any AI platform so that the user may focus on experimentation.
 

@@ -9,11 +9,11 @@ PyTorch is a Python package that provides two high-level features:
 * Tensor computation \(like NumPy\) with strong GPU acceleration
 * Deep neural networks built on a tape-based autograd system
 
-You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed. More information at [**https://github.com/kubeflow/pytorch-operator**](https://github.com/kubeflow/pytorch-operator) ****or the PyTorch site [https://pytorch.org/](https://pytorch.org/)
+You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed. More information at [**https://github.com/kubeflow/pytorch-operator**](https://github.com/kubeflow/pytorch-operator) _\*\*_or the PyTorch site [https://pytorch.org/](https://pytorch.org/)
 
 ## Quick Start
 
-As usual, let's deploy PyTorch with one single line command 
+As usual, let's deploy PyTorch with one single line command
 
 If you leverage **CPU** only
 
@@ -78,7 +78,7 @@ spec:
 EOF
 ```
 
-If you have **GPU**  enabled you may run it this way
+If you have **GPU** enabled you may run it this way
 
 ```yaml
 k3s kubectl apply -f - << EOF

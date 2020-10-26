@@ -10,9 +10,3 @@ description: >-
 * Coffe and Cloud Native E51: [https://youtu.be/I02GIAKwLBU?t=1314](https://youtu.be/I02GIAKwLBU?t=1314)
 * Kubeflow Official Documentation: [https://www.kubeflow.org/docs/pipelines/installation/localcluster-deployment/\#k3ai-alpha](https://www.kubeflow.org/docs/pipelines/installation/localcluster-deployment/#k3ai-alpha)
 
-
-
-
-
-
-

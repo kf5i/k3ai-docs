@@ -50,8 +50,6 @@ startk3s
 
 wait for a couple of minutes for the cluster to restart all the pods and you're good to go.
 
-#### 
-
 #### The connection to the server localhost:8080 was refused
 
 If the above error happens please use the following command to install k3ai

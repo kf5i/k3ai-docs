@@ -71,7 +71,7 @@ spec:
 EOF
 ```
 
-_Note: Because we are using local-path as storage volume  and we are on a single node cluster  we can't  use ReadWriteMany as per Rancher local-path provisioner issue_ [_https://github.com/rancher/local-path-provisioner/issues/70\#issuecomment-574390050_](https://github.com/rancher/local-path-provisioner/issues/70#issuecomment-574390050)\_\_
+_Note: Because we are using local-path as storage volume and we are on a single node cluster we can't use ReadWriteMany as per Rancher local-path provisioner issue_ [_https://github.com/rancher/local-path-provisioner/issues/70\#issuecomment-574390050_](https://github.com/rancher/local-path-provisioner/issues/70#issuecomment-574390050)\_\_
 
 ## Step 2
 

@@ -29,13 +29,13 @@ Once the installer has finished please proceed to the "How to use KFP SDK" secti
 
 ## KFP within K3ai environment
 
-We leverage Jupyter Notebooks to provide a pre-installed kfp environment so that one may immediately experiment with this. 
+We leverage Jupyter Notebooks to provide a pre-installed kfp environment so that one may immediately experiment with this.
 
 ```text
 curl -sfL https://get.k3ai.in | bash -s --  --cpu --pipelines --plugin_jupyter-minimal
 ```
 
-If you are using **WSL** 
+If you are using **WSL**
 
 ```text
 curl -sfL https://get.k3ai.in | bash -s --  --wsl --pipelines --plugin_jupyter-minimal
@@ -51,7 +51,7 @@ Once the installer has finished please proceed to the "How to use KFP SDK" secti
 
 ## How to use KFP SDK
 
-We present here a simple example to explain how the KFP SDK may be used. More examples may be found at  [**https://www.kubeflow.org/docs/pipelines/tutorials/sdk-examples/**](https://www.kubeflow.org/docs/pipelines/tutorials/sdk-examples/)\*\*\*\*
+We present here a simple example to explain how the KFP SDK may be used. More examples may be found at [**https://www.kubeflow.org/docs/pipelines/tutorials/sdk-examples/**](https://www.kubeflow.org/docs/pipelines/tutorials/sdk-examples/)\*\*\*\*
 
 #### Testing KFP SDK from virtualenv
 
@@ -158,7 +158,7 @@ pipelines = client.pipelines.list_pipelines(filter=filter)
 print (pipelines)
 ```
 
-Pres CTRL+ENTER to execute the cell. 
+Pres CTRL+ENTER to execute the cell.
 
 ### Checking the results
 
@@ -200,6 +200,4 @@ If everything went well in both `virtualenv` and `jupyter notebooks` samples you
                 'url': None}],
  'total_size': 1}
 ```
-
- 
 

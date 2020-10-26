@@ -20,7 +20,7 @@ curl -sfL https://get.k3ai.in | bash -s -- --gpu --plugin_tfs-resnet
 
 ## Test the installation
 
-For a full explanation of how to use Tensorflow Serving please take a look at the documentation site: 
+For a full explanation of how to use Tensorflow Serving please take a look at the documentation site:
 
 ### Step 1 - Prepare your client environment
 
@@ -152,6 +152,5 @@ model_spec {
   }
   signature_name: "serving_default"
 }
-
 ```
 
