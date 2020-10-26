@@ -1,20 +1,16 @@
+---
+description: >-
+  Welcome to the K3ai project! We took the freedom to take these rules from
+  other great OSS projects like Kubeflow, Kubernetes, and so on.‌
+---
+
 # Contributing
-
-* **Contributing**
-
-  ‌
-
-  Welcome to the K3ai project! We took the freedom to take these rules from other great OSS projects like Kubeflow, Kubernetes, and so on.‌
-
-  \*\*\*\*
 
 ## **Getting started as a K3ai contributor**‌
 
 This document is the single source of truth for how to contribute to the code base. We'd love to accept your patches and contributions to this project. There are just a few small guidelines you need to follow.‌
 
-**As you will notice we do not, currently, require any CLA signature. This may change in the future anyway but if so even that change will follow the contributing guidelines and processes.**
-
-‌
+**As you will notice we do not, currently, require any CLA signature. This may change in the future anyway but if so even that change will follow the contributing guidelines and processes.**‌
 
 ## **Follow the code of conduct**‌
 
