@@ -124,7 +124,15 @@
   A typical OWNERS file looks like:
 
   ```text
-  approvers:  - alice  - bob     # this is a commentreviewers:  - alice  - carol   # this is another comment  - sig-foo # this is an alias
+  approvers:  
+      - alice  
+      - bob     
+  # this is a comment
+  reviewers:  
+      - alice  
+      - carol   
+  # this is another comment  
+      - sig-foo # this is an alias
   ```
 
   ‌
@@ -144,7 +152,13 @@
   A sample OWNERS\_ALIASES file looks like:
 
   ```text
-  aliases:  sig-foo:    - david    - erin  sig-bar:    - bob    - frank
+  aliases:  
+      sig-foo:    
+          - david    
+          - erin  
+      sig-bar:    
+          - bob    
+          - frank
   ```
 
   ‌
