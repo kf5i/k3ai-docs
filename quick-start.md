@@ -8,15 +8,15 @@ Start by installing K3Ai from the **STABLE** channel with this:
 curl -sfL https://get.k3ai.in | bash -
 ```
 
-**if you feel brave you may test our EDGE channel**
+if you feel brave you may test our **EDGE** channel
 
-**on Linux**
+### **on Linux**
 
 ```text
 curl -sfL https://get-core.k3ai.in | bash -
 ```
 
-**on Windows**
+### **on Windows**
 
 ```text
 . { iwr -useb http://get-core.k3ai.in  } | iex;
