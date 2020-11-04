@@ -19,7 +19,7 @@ curl -sfL https://get-core.k3ai.in | bash -
 ### **on Windows**
 
 ```text
-. { iwr -useb http://get-core.k3ai.in  } | iex;
+. { iwr -useb https://get-core.k3ai.in  } | iex;
 ```
 
 ### **Note: sometimes things take longer than expected resulting in the error below:**
