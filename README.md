@@ -10,7 +10,7 @@ K3ai is a lightweight infrastructure-in-a-box specifically built to install and 
 curl -sfL https://get.k3ai.in | bash -
 ```
 
-Looking for more interaction? join our Slack channel [**here**](https://join.slack.com/t/kf5ikfai/shared_invite/zt-j61vfvkx-tCD~k9l2218lu7ZplRLGNA)\*\*\*\*
+Looking for more interaction? join our Slack channel [**here**](https://join.slack.com/t/k3ai/shared_invite/zt-j61vfvkx-tCD~k9l2218lu7ZplRLGNA)\*\*\*\*
 
 ## Components of K3ai
 
