@@ -2,15 +2,16 @@
 
 ## First things First
 
-Start by installing K3Ai from the **STABLE** channel with this:
+Start by installing K3Ai, what you **DON'T** need to start:
 
-```text
-curl -sfL https://get.k3ai.in | bash -
-```
+* A fancy super-duper computer/server with GPU's etc..\(we managed to install everything in a 4 GB RAM laptop\)
+* A cluster: don't worry we will take care of it if you don't have anything
+* Linux, Mac, Win: we got them all \(and working to support ARM too\)
+* Do I need to go through 1000 pages of documentation? Nah just go for the below command and move to Hello-Start
 
-if you feel brave you may test our **EDGE** channel
+Ready? Let's go, first pick up your flavor:
 
-### **on Linux**
+### **on Linux \(including Windows Subsystem for Linux\)**
 
 ```text
 curl -sfL https://get-core.k3ai.in | bash -
@@ -22,6 +23,14 @@ curl -sfL https://get-core.k3ai.in | bash -
 . { iwr -useb https://get-core.k3ai.in  } | iex;
 ```
 
+### **Mac?** 
+
+go to the latest release and grab your own k3ai cli. If you want this automated please open an [**issue**](https://github.com/kf5i/k3ai-core/issues/new/choose)\*\*\*\*
+
+```bash
+https://github.com/kf5i/k3ai-core/releases
+```
+
 ### **Note: sometimes things take longer than expected resulting in the error below:**
 
 ```text
@@ -29,6 +38,4 @@ error: timed out waiting for the condition on xxxxxxx
 ```
 
 Don't worry! Sometimes the installation takes a few minutes, especially the Vagrant version or if you have limited bandwidth.
-
-Still curious? Here's a short demo:
 

@@ -10,16 +10,10 @@ More on the Tensorflow Operator at [**https://github.com/kubeflow/tf-operator**]
 
 ## Quick Start
 
-All you have to run is with **CPU** support
+All you have to run is:
 
 ```bash
-curl -sfL https://get.k3ai.in | bash -s -- --cpu --plugin_tf-operator
-```
-
-to run with **GPU** support
-
-```bash
-curl -sfL https://get.k3ai.in | bash -s -- --gpu--plugin_tf-operator
+k3ai-cli apply tensorflow-op
 ```
 
 ## Test your installation
@@ -31,7 +25,7 @@ We present here a sample from Tensorflow Operator on [**https://github.com/kubef
 We first need to add a persistent volume and claim, to do so let's add the two **YAML** file we need, copy and paste each command in order.
 
 ```yaml
-k3s kubectl apply -f - << EOF
+kubectl apply -f - << EOF
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -53,7 +47,7 @@ EOF
 now we add the **PVC**.
 
 ```yaml
-k3s kubectl apply -f - << EOF
+kubectl apply -f - << EOF
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

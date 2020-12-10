@@ -15,16 +15,8 @@ You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to 
 
 As usual, let's deploy PyTorch with one single line command
 
-If you leverage **CPU** only
-
 ```text
-curl -sfL https://get.k3ai.in | bash -s -- --cpu  --plugin_pytorch-operator
-```
-
-if you like to use PyTorch with **GPU**
-
-```text
-curl -sfL https://get.k3ai.in | bash -s -- --gpu --plugin_pytorch-operator
+k3ai-cli apply pytorch-op
 ```
 
 ## Test You PyTorch-Job installation
@@ -40,7 +32,7 @@ You'll see tha in the example a container need to be created before running the 
 For **CPU only**
 
 ```yaml
-k3s kubectl apply -f - << EOF
+kubectl apply -f - << EOF
 apiVersion: "kubeflow.org/v1"
 kind: "PyTorchJob"
 metadata:
@@ -81,7 +73,7 @@ EOF
 If you have **GPU** enabled you may run it this way
 
 ```yaml
-k3s kubectl apply -f - << EOF
+kubectl apply -f - << EOF
 apiVersion: "kubeflow.org/v1"
 kind: "PyTorchJob"
 metadata:

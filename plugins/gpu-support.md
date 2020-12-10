@@ -1,4 +1,4 @@
-# GPU support
+# NVIDIA gpu
 
 ## Quick Start Guide
 
@@ -11,6 +11,6 @@ Please follow this guide from NVIDIA to install the pre-requisites:
 Once you completed the pre-req's you may install everything with the following command:
 
 ```text
-curl -sfL https://get.k3ai.in | bash -s -- --gpu
+k3ai-cli apply nvidia-gpu
 ```
 

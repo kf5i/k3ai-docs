@@ -19,11 +19,13 @@ You'll need an account on Civo.com. To do so simply register on Civo here:
 
 [**https://www.civo.com/signup**](https://www.civo.com/signup)\*\*\*\*
 
-## Step 1
+## Installing
 
-Launch your k3s cluster using the default options \(Traefik and Metric-server selected\)
+All you have to do is simply type:
 
-![k3s selection](../.gitbook/assets/1.png)
+```bash
+k3ai-cli init --cloud civo
+```
 
 Wait for the instance to finish the deployment
 
@@ -42,7 +44,7 @@ kubectl config --kubeconfig="civo-k3ai-kubeconfig"
 One last thing and then we're done:
 
 ```bash
- curl -sfL https://get.k3ai.in | bash -s - --skipk3s --plugin_civo_kfpipelines
+ k3ai-cli apply <your favorite plugin>
 ```
 
 enjoy your k3ai on[ **https://civo.com**](https://civo.com)\*\*\*\*

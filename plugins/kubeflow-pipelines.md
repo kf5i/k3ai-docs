@@ -4,16 +4,14 @@ Kubeflow Pipelines is a platform for building and deploying portable, scalable m
 
 ## Quick Start Guide
 
-You only have to decide if you want **CPU** support:
+We offer to flavors: Kubeflow pipelines based on Argo Workflows and based on TektonCD engine
 
 ```bash
-curl -sfL https://get.k3ai.in | bash -s -- --cpu --plugin_kfpipelines
-```
+#To install KF based on Argo Workflows
+k3ai-cli apply kubeflow-pipelines
 
-or if you prefer **GPU** support:
-
-```bash
-curl -sfL https://get.k3ai.in | bash -s -- --gpu --plugin_kfpipelines
+#To install KF based on TektonCD
+k3ai-cli apply kf-pipelines-tekton
 ```
 
 ## What is Kubeflow Pipelines? <a id="what-is-kubeflow-pipelines"></a>

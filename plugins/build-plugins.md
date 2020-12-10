@@ -1,161 +1,125 @@
 # How to Build Your First Plugin
 
-Building plugins for k3ai is very simple. This guide will walk you through the steps required to build oa plugin and contribute to the project.
+Building plugins for k3ai is very simple. This guide will walk you through the steps required to build a plugin and contribute to the project.
 
 The first step is to learn the structure of the plugins repository: [**https://github.com/kf5i/k3ai-plugins**](https://github.com/kf5i/k3ai-plugins)\*\*\*\*
 
-The repo is structured in a very simple way. For each plugin you have a corresponding folder named:
+The repo is structured in a very simple way. 
 
-**plugin\_&lt;PLUGIN NAME&gt;**
+* core
+  * groups
+  * plugins
+* common
+* community
 
-where **&lt;PLUGIN NAME&gt;** is the name of your plugin \(i.e.: plugin\_kfpipelines identify the Kubeflow pipelines based on default Argo workflows engine\).
+**`Core`**is the root folder it includes  **plugins**  and  **groups**
 
-The plugin folder should contain two files:
+**`Plugins`** are the actual application to be deployed, for each plugin folder there is a plugin.yaml file.
 
-* README.md
-* install
+**Groups** are a combination of various plugins to be installed altogether
 
-_Notice the absence of an extension for the install file._
+Under **`common`** you'll find all the manifests or files needed by more than one plugin. Those are sort of reusable components \(i.e.: treafik ingress definitions for plugins\).
 
-The **plugin\_template** contains a starting point for contributors.
+k3ai supports custom repositories for plugins and groups so this means you may have your own instead of using our public ones.
 
-In a nutshell, the **install** file is a bash file where you can store your logic. See the reference template install file below.
+Let's create a local repo and deploy a "hello-world" plugin.
 
-The **install** is organized in three parts. The initial part is useful to check container status and pass pieces of information in the terminal.
+First, we have to create the basic structure.  So let's create anywhere on your laptop a structure like this:
 
-```bash
-#!/bin/bash
+* demo
+  * core
+    * groups
+    * plugins
+      * demo-plugin
+        * plugin.yaml
+  * common
+    * demo-plugin
+      * deployment.yaml
 
-#########################################
-### K3ai (keɪ3ai) Plugins - Tensorflow Serving
-### https://github.com/kf5i/k3ai
-### Alessandro Festa @bringyourownai
-### Gabriele Santomaggio @gsantomaggio
-######################################### 
+Now let's open the plugin.yaml file and copy the below content in it.
 
-info()
-{
-    echo '[INFO] ' "$@"
-}
-
-infoL()
-{
-    echo -en '[INFO] ' "$@\n"
-}
-
-sleep_cursor()
-{
- chars="/-\|"
- for (( z=0; z<7; z++ )); do
-   for (( i=0; i<${#chars}; i++ )); do
-    sleep 0.5
-    echo -en "${chars:$i:1}" "\r"
-  done
-done
-}
-
-
-wait() 
-{
-status=1
-infoL "Testing.." $1.$2  
-while [ : ]
-  do
-    sleep_cursor &
-    kubectl wait --for condition=ready --timeout=14s pod -l  $1   -n $2
-    status=$?
-
-    if [ $status -ne 0 ]
-    then 
-      infoL "$1 isn't ready yet. This may take a few minutes..."
-      sleep_cursor
-    else
-      break  
-    fi 
-  done
-}
+```yaml
+plugin-name: demo-plugin
+plugin-description: Demo of a custom local plugin
+namespace: "default"
+yaml:
+  - url: "./commons/demo-plugin/deployment.yaml"
+    type: "file"
 ```
 
-The core of the plugin is in the **install\(\)** function
+Save the file and open the deployment.yaml. Copy&Paste the following content.
 
-```bash
-#######
-### Kubeflow pipelines login as example, change it accordingly with your needs
-install(){
-    info "Installing <TEMPLATE NAME> crd"
-    export PIPELINE_VERSION=1.0.1
-    kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=$PIPELINE_VERSION"
-    kubectl wait --for condition=established --timeout=60s crd/applications.app.k8s.io
-    sleep_cursor &
-    info "Installing pipelines manifests"
-    kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/env/platform-agnostic-pns?ref=$PIPELINE_VERSION"
-##We create an Array to check when pods are available to system
-    waiting_pod_array=("k8s-app=kube-dns;kube-system" 
-                       "k8s-app=metrics-server;kube-system"
-                       "app=traefik;kube-system"  
-                       "app=minio;kubeflow"
-                       "app=mysql;kubeflow"
-                       "app=cache-server;kubeflow"
-                       "app=ml-pipeline-persistenceagent;kubeflow"
-                       "component=metadata-grpc-server;kubeflow"
-                       "app=ml-pipeline-ui;kubeflow")
-
-    for i in "${waiting_pod_array[@]}"; do 
-      echo "$i"; 
-      IFS=';' read -ra VALUES <<< "$i"
-        wait "${VALUES[0]}" "${VALUES[1]}"
-    done
-#####
-
-
-
-    info "Kubeflow pipelines ready!!"
-#### Ingress on Treafik definition if not needed (i.e. your plugin install Istio)
-# remove it, your PR will probably need more work in that case beacuse k3s by 
-# default install Traefik.
-
-    info "Defining the ingress"
-    sleep_cursor
-
-    kubectl apply -f - << EOF
-      apiVersion: networking.k8s.io/v1beta1
-      kind: IngressClass
-      metadata: 
-        name: traefik-lb
-      spec: 
-        controller: traefik.io/ingress-controller
-EOF
-
-    kubectl apply -f - << EOF
-      apiVersion: "networking.k8s.io/v1beta1"
-      kind: "Ingress"
-      metadata:
-        name: "pipeline-ingress"
-        namespace: kubeflow
-        annotations:
-          nginx.ingress.kubernetes.io/rewrite-target: /$2
-
-      spec:
-        ingressClassName: "traefik-lb"
-        rules:
-        - http:
-            paths:
-            - path: "/"
-              backend:
-                serviceName: "ml-pipeline-ui"
-                servicePort: 80
-EOF
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: shell-demo
+spec:
+  volumes:
+  - name: shared-data
+    emptyDir: {}
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - name: shared-data
+      mountPath: /usr/share/nginx/html
+  hostNetwork: true
+  dnsPolicy: Default
 ```
 
-the last part is where you call back the **install** function
+We are ready let's check the plugin list with
 
-```bash
-sleep_cursor
+```yaml
+k3ai-cli list --repo "<absolute path to root folder>/"
 
-IP=$(kubectl get service/traefik -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n kube-system)
-info "pipelines UI: http://"$IP 
-}
+#k3ai-cli list --repo "home/user/core/"
+```
 
-install
+You should get something like this
+
+```yaml
+k3ai-cli list --repo "<absolute path to root folder>/"
+
+Name                           Description
+demo-plugin                    A simple demo of a local plugin
+```
+
+Great! Now let's apply the plugin to our environment
+
+```yaml
+k3ai-cli apply --repo "<absolute path to root folder>/"
+```
+
+Now let's check if the pod is running with
+
+```yaml
+kubectl get pod shell-demo
+
+#Output
+NAME         READY   STATUS    RESTARTS   AGE
+shell-demo   1/1     Running   0          3m9s
+```
+
+We are ready so let's execute a command inside our plugin. Copy and Paste the below command into your terminal.
+
+```yaml
+kubectl exec --stdin --tty shell-demo -- /bin/bash -c "apt-get update > /dev/null && apt-get -y install boxes > /dev/null &&  echo 'Hey, this is K3ai! Thanks for use this.' | boxes -d peek"
+```
+
+If everything goes right you should see something like this
+
+```yaml
+/*       _\|/_
+         (o o)
+ +----oOO-{_}-OOo------------------------+
+ |Hey, this is K3ai! Thanks for use this.|
+ +--------------------------------------*/
+```
+
+Congratulation you created your first plugin. Now to delete it simply execute
+
+```yaml
+k3ai-cli delete --repo "<absolute path to root folder>/"
 ```
 
