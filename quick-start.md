@@ -39,3 +39,12 @@ error: timed out waiting for the condition on xxxxxxx
 
 Don't worry! Sometimes the installation takes a few minutes, especially the Vagrant version or if you have limited bandwidth.
 
+Errors in the utility script? Use this \(on Linux\)
+
+```bash
+#Set a variable to grab latest version
+Version=$(curl -s "https://api.github.com/repos/kf5i/k3ai-core/releases/latest" | awk -F '"' '/tag_name/{print $4}' | cut -c 2-6) 
+# get the binaries
+wget https://github.com/kf5i/k3ai-core/releases/download/v$Version/k3ai-core_${Version}_linux_amd64.tar.gz
+```
+
