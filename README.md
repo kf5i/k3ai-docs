@@ -32,6 +32,8 @@ Looking for more interaction? join our Slack channel [**here**](https://join.sla
 * Mac
 * ARM
 
+**NOTE: Unfortunately not all plugins work with ARM. We will take care of this and make a way to let you know before installing them**
+
 ## Components of K3ai
 
 Currently, we install the following components \(the list is changing and growing\):
