@@ -4,6 +4,7 @@
 * [What we are trying to solve \(a.k.a Our Goals\)](what-we-are-trying-to-solve-a.k.a-our-goals.md)
 * [Quick Start](quick-start.md)
 * [Command Reference](command-reference.md)
+* [Config File Reference](config-file-reference.md)
 * [Remove k3ai \(Work In Progress\)](remove-k3ai.md)
 * [Contributing](contributing.md)
 
