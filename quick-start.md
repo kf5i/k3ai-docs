@@ -11,6 +11,8 @@ Start by installing K3Ai, what you **DON'T** need to start:
 
 Ready? Let's go, first pick up your flavor, we have a utility script but f for any reason it fails just go straight away to ****[**https://github.com/kf5i/k3ai-core/releases**](https://github.com/kf5i/k3ai-core/releases) and download the binary. Place it in your path and that's it.
 
+**NOTE: Unfortunately not all plugins work with ARM. We will take care of this and make a way to let you know before installing them**
+
 ### **on Linux \(including Windows Subsystem for Linux\)**
 
 ```text
@@ -23,9 +25,9 @@ curl -sfL https://get-core.k3ai.in | bash -
 . { iwr -useb https://get-core.k3ai.in  } | iex;
 ```
 
-### **Mac?** 
+### **Mac or ARM?**
 
-go to the latest release and grab your own k3ai cli. If you want this automated please open an [**issue**](https://github.com/kf5i/k3ai-core/issues/new/choose)\*\*\*\*
+go to the latest release and grab your own k3ai-cli. If you want this automated please open an [**issue**](https://github.com/kf5i/k3ai-core/issues/new/choose)\*\*\*\*
 
 ```bash
 https://github.com/kf5i/k3ai-core/releases

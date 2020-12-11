@@ -25,6 +25,13 @@ wget https://github.com/kf5i/k3ai-core/releases/download/v$Version/k3ai-core_${V
 
 Looking for more interaction? join our Slack channel [**here**](https://join.slack.com/t/k3ai/shared_invite/zt-j61vfvkx-tCD~k9l2218lu7ZplRLGNA)\*\*\*\*
 
+## What we do support:
+
+* Windows
+* Linux
+* Mac
+* ARM
+
 ## Components of K3ai
 
 Currently, we install the following components \(the list is changing and growing\):
