@@ -9,7 +9,7 @@ Start by installing K3Ai, what you **DON'T** need to start:
 * Linux, Mac, Win: we got them all \(and working to support ARM too\)
 * Do I need to go through 1000 pages of documentation? Nah just go for the below command and move to Hello-Start
 
-Ready? Let's go, first pick up your flavor:
+Ready? Let's go, first pick up your flavor, we have a utility script but f for any reason it fails just go straight away to ****[**https://github.com/kf5i/k3ai-core/releases**](https://github.com/kf5i/k3ai-core/releases) and download the binary. Place it in your path and that's it.
 
 ### **on Linux \(including Windows Subsystem for Linux\)**
 
