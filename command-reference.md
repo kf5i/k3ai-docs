@@ -24,7 +24,6 @@ Available Commands:
 
 Flags:
   -h, --help          help for k3ai-cli
-      --kubectl       Use kubectl for deployment. Uses k3s when set to false
       --repo string   URI for the plugins repository.  
 
 Use "k3ai-cli [command] --help" for more information about a command.
@@ -45,7 +44,6 @@ Flags:
   -h, --help    help for apply
 
 Global Flags:
-      --kubectl       Use kubectl for deployment. Uses k3s when set to false
       --repo string   URI for the plugins repository.  
       (default "https://api.github.com/repos/kf5i/k3ai-plugins/contents/core/")
 ```
@@ -74,7 +72,6 @@ Flags:
       --local string    Options availabe k3s,k0s,kind
 
 Global Flags:
-      --kubectl       Use kubectl for deployment. Uses k3s when set to false
       --repo string   URI for the plugins repository.  
       (default "https://api.github.com/repos/kf5i/k3ai-plugins/contents/core/")
 ```
@@ -94,7 +91,6 @@ Flags:
   -h, --help    help for list
 
 Global Flags:
-      --kubectl       Use kubectl for deployment. Uses k3s when set to false
       --repo string   URI for the plugins repository.  
       (default "https://api.github.com/repos/kf5i/k3ai-plugins/contents/core/")
 ```
@@ -114,7 +110,6 @@ Flags:
   -h, --help    help for delete
 
 Global Flags:
-      --kubectl       Use kubectl for deployment. Uses k3s when set to false
       --repo string   URI for the plugins repository.  
       (default "https://api.github.com/repos/kf5i/k3ai-plugins/contents/core/")
 ```
