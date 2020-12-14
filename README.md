@@ -11,7 +11,7 @@ All you have to do is, download the binary for your Operating System, move it to
 ### Linux \(including Microsoft WSL\)
 
 ```text
-curl -fL "https://get.k3ai.in" -o k3ai.tar.gz
+curl -sfL "https://get.k3ai.in" -o k3ai.tar.gz
 ```
 
 once downloaded untar the file  and move it to your path
@@ -37,7 +37,7 @@ once downloaded unzip the file and move it to your path or execute it from a fol
 ### Mac
 
 ```text
-curl -fL "https://get-mac.k3ai.in" -o k3ai.tar.gz
+curl -sfL "https://get-mac.k3ai.in" -o k3ai.tar.gz
 ```
 
 once downloaded untar the file  and move it to your path
@@ -51,7 +51,7 @@ tar -xvzf k3ai.tar.gz \
 ### Arm64
 
 ```text
-curl -fL "https://get-arm.k3ai.in" -o k3ai.tar.gz
+curl -sfL "https://get-arm.k3ai.in" -o k3ai.tar.gz
 ```
 
 once downloaded untar the file  and move it to your path
