@@ -2,17 +2,17 @@
 
 
 
-This the list of all command available within k3ai-cli
+This the list of all command available within k3ai
 
-To get the list simply type `k3ai-cli -h`
+To get the list simply type `k3ai -h`
 
 ```text
- k3ai-cli is a lightweight infrastructure-in-a-box solution specifically built to
+ k3ai is a lightweight infrastructure-in-a-box solution specifically built to
  install and configure AI tools and platforms in production environments on Edge
  and IoT devices as easily as local test environments.
 
 Usage:
-  k3ai-cli [command]
+  k3ai [command]
 
 Available Commands:
   apply       Apply a plugin or a plugin group
@@ -37,7 +37,7 @@ with apply you deploy the various plugins or group-plugins.
 Apply a plugin or a plugin group
 
 Usage:
-  k3ai-cli apply <plugin_name> [flags]
+  k3ai apply <plugin_name> [flags]
 
 Flags:
   -g, --group   Apply a plugin group
@@ -57,13 +57,13 @@ Initialize K3ai Client, allowing user to deploy a new K8's cluster,
 list plugins and groups
 
 Usage:
-  k3ai-cli init [flags]
+  k3ai init [flags]
 
 Examples:
-k3ai-cli init                                   #Will use config from $HOME/.k3ai/config.yaml and use interactive menus
-k3ai-cli init --config /myfolder/myconfig.yaml  #Use a custom config.yaml in another location(local or remote)
-k3ai-cli init --local k3s                       #Use config target marked local and of type k3s
-k3ai-cli init --cloud civo                      #Use config target marked as cloud and of type civo
+k3ai init                                   #Will use config from $HOME/.k3ai/config.yaml and use interactive menus
+k3ai init --config /myfolder/myconfig.yaml  #Use a custom config.yaml in another location(local or remote)
+k3ai init --local k3s                       #Use config target marked local and of type k3s
+k3ai init --cloud civo                      #Use config target marked as cloud and of type civo
 
 Flags:
       --cloud string    Options availabe for cloud providers
@@ -84,7 +84,7 @@ List is used to retrieve the available plugins or group-plugins
 List all plugins or plugin groups
 
 Usage:
-  k3ai-cli list [flags]
+  k3ai list [flags]
 
 Flags:
   -g, --group   List the plugin groups
@@ -103,7 +103,7 @@ Delete is used to remove a deployed plugin
 Delete a plugin or a plugin group
 
 Usage:
-  k3ai-cli delete <plugin_name> [flags]
+  k3ai delete <plugin_name> [flags]
 
 Flags:
   -g, --group   Delete a plugin group

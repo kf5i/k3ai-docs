@@ -45,7 +45,7 @@ This guide will use the local installation.
 Open a terminal window and simply type the following:
 
 ```text
-k3ai-cli init
+k3ai init
 ```
 
 What will happen is the following:
@@ -61,19 +61,19 @@ What will happen is the following:
 An alternative way to install a cluster and be able to choose the favorite flavor is to use a slightly different command
 
 ```text
-k3ai-cli init --local <YourClusterFlavor>
+k3ai init --local <YourClusterFlavor>
 ```
 
 Let's go into more details here's the full list of options:
 
-* `k3ai-cli init --local k3s`
-* `k3ai-cli init --local k0s`
-* `k3ai-cli init --local kind`
-* `k3ai-cli init --local k3d+`
+* `k3ai init --local k3s`
+* `k3ai init --local k0s`
+* `k3ai init --local kind`
+* `k3ai init --local k3d`
 
 In case of Cloud:
 
-* `k3ai-cli init --cloud civo`
+* `k3ai init --cloud civo`
 
 Now to sum it up here's a video that shows how it works.
 
@@ -81,7 +81,7 @@ Now to sum it up here's a video that shows how it works.
 
 Home Rebuild - Foundation
 
-As we mentioned at the beginning of this guide k3ai support a config file as well. The config file looks like the one below and is located at &lt;home user folder&gt;/.k3ai/config.yaml but k3ai support also a custom location through `k3ai-cli init --config <yourpath to config file>`
+As we mentioned at the beginning of this guide k3ai support a config file as well. The config file looks like the one below and is located at &lt;home user folder&gt;/.k3ai/config.yaml but k3ai support also a custom location through `k3ai init --config <yourpath to config file>`
 
 ```yaml
 # The first two (2) lines are used to indicate what the section does. 

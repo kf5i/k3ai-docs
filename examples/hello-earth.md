@@ -26,13 +26,13 @@ That's why we developed the plugins and group-plugins concept, to take shortcuts
 So let's take a look at the option we got first. Type the following in your terminal
 
 ```text
-k3ai-cli list
+k3ai list
 ```
 
 You should get a result similar to the one below
 
 ```text
-k3ai-cli list
+k3ai list
 
 Name                           Description
 argo-workflow                  Argo Workflow plugin
@@ -53,13 +53,13 @@ tensorflow-op                  Kubeflow Tensorflow
 That's the list of the current plugins we got, each one represents a single application. Now let's try a different command:
 
 ```text
-k3ai-cli list -g
+k3ai list -g
 ```
 
 The result will be different \(something similar to\):
 
 ```text
-k3ai-cli list -g
+k3ai list -g
 
 Name                           Description
 argo-workflow-traefik          Expose Argo Workflow using traefik HTTP
@@ -89,13 +89,13 @@ _NOTE: Not all group plugins work with every cluster because not all of them dep
 Okay, we are ready, let's go for the notebook. Type:
 
 ```text
-k3ai-cli apply jupyter-minimal
+k3ai apply jupyter-minimal
 ```
 
 Or if you want also the ingress \(like in K3s/k3d\)
 
 ```text
-k3ai-cli apply -g jupyter-minimal-traefik
+k3ai apply -g jupyter-minimal-traefik
 ```
 
 Once everything has been deployed the notebook is reachable at `http://<YOUR CLUSTER IP>:8888`

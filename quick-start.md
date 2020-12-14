@@ -13,24 +13,75 @@ Ready? Let's go, first pick up your flavor, we have a utility script but f for a
 
 **NOTE: Unfortunately not all plugins work with ARM. We will take care of this and make a way to let you know before installing them**
 
-### **on Linux \(including Windows Subsystem for Linux\)**
+### \*\*\*\*
+
+All you have to do is, download the binary for your Operating System, move it to your path \(if you like easy things\), and use it.
+
+### Linux \(Including Microsoft WSL\)
 
 ```text
-curl -sfL https://get-core.k3ai.in | bash -
+curl -fL "https://get.k3ai.in" -o k3ai.tar.gz
 ```
 
-### **on Windows**
-
-```text
-. { iwr -useb https://get-core.k3ai.in  } | iex;
-```
-
-### **Mac or ARM?**
-
-go to the latest release and grab your own k3ai-cli. If you want this automated please open an [**issue**](https://github.com/kf5i/k3ai-core/issues/new/choose)\*\*\*\*
+once downloaded untar the file  and move it to your path
 
 ```bash
-https://github.com/kf5i/k3ai-core/releases
+tar -xvzf k3ai.tar.gz \
+&& chmod +x ./k3ai \
+&& sudo mv ./k3ai /usr/local/bin
+```
+
+### Windows
+
+```bash
+Invoke-WebRequest -Uri "https://get-win.k3ai.in" -Ouput
+```
+
+once downloaded unzip the file and move it to your path or execute it from a folder of your choice \(i.e.: k3ai.exe -h\)
+
+```bash
+ Expand-Archive -Path .\k3ai.zip
+```
+
+### Mac
+
+```text
+curl -fL "https://get-mac.k3ai.in" -o k3ai.tar.gz
+```
+
+once downloaded untar the file  and move it to your path
+
+```bash
+tar -xvzf k3ai.tar.gz \
+&& chmod +x ./k3ai \
+&& sudo mv ./k3ai /usr/local/bin
+```
+
+### Arm64
+
+```text
+curl -fL "https://get-arm.k3ai.in" -o k3ai.tar.gz
+```
+
+once downloaded untar the file  and move it to your path
+
+```bash
+tar -xvzf k3ai.tar.gz \
+&& chmod +x ./k3ai \
+&& sudo mv ./k3ai /usr/local/bin
+```
+
+### Alternative method for Linux
+
+If for any reason it fails just go straight away to [https://github.com/kf5i/k3ai-core/releases](https://github.com/kf5i/k3ai-core/releases) and download the binary. Place it in your path and that's it.
+
+ or use the following
+
+```bash
+#Set a variable to grab latest version
+Version=$(curl -s "https://api.github.com/repos/kf5i/k3ai-core/releases/latest" | awk -F '"' '/tag_name/{print $4}' | cut -c 2-6) 
+# get the binaries
+wget https://github.com/kf5i/k3ai-core/releases/download/v$Version/k3ai-core_${Version}_linux_amd64.tar.gz
 ```
 
 ### **Note: sometimes things take longer than expected resulting in the error below:**

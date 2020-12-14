@@ -11,6 +11,6 @@ Please follow this guide from NVIDIA to install the pre-requisites:
 Once you completed the pre-req's you may install everything with the following command:
 
 ```text
-k3ai-cli apply nvidia-gpu
+k3ai apply nvidia-gpu
 ```
 

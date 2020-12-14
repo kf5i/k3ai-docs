@@ -5,7 +5,7 @@
 You only have to decide if you want **CPU** support:
 
 ```bash
-k3ai-cli apply argo-workflow
+k3ai apply argo-workflow
 ```
 
 ### What is Argo Workflows?

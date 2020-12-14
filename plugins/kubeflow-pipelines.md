@@ -8,10 +8,10 @@ We offer to flavors: Kubeflow pipelines based on Argo Workflows and based on Tek
 
 ```bash
 #To install KF based on Argo Workflows
-k3ai-cli apply kubeflow-pipelines
+k3ai apply kubeflow-pipelines
 
 #To install KF based on TektonCD
-k3ai-cli apply kf-pipelines-tekton
+k3ai apply kf-pipelines-tekton
 ```
 
 ## What is Kubeflow Pipelines? <a id="what-is-kubeflow-pipelines"></a>

@@ -71,15 +71,15 @@ spec:
 We are ready let's check the plugin list with
 
 ```yaml
-k3ai-cli list --repo "<absolute path to root folder>/"
+k3ai list --repo "<absolute path to root folder>/"
 
-#k3ai-cli list --repo "home/user/core/"
+#k3ai list --repo "home/user/core/"
 ```
 
 You should get something like this
 
 ```yaml
-k3ai-cli list --repo "<absolute path to root folder>/"
+k3ai list --repo "<absolute path to root folder>/"
 
 Name                           Description
 demo-plugin                    A simple demo of a local plugin
@@ -88,7 +88,7 @@ demo-plugin                    A simple demo of a local plugin
 Great! Now let's apply the plugin to our environment
 
 ```yaml
-k3ai-cli apply --repo "<absolute path to root folder>/"
+k3ai apply --repo "<absolute path to root folder>/"
 ```
 
 Now let's check if the pod is running with
@@ -120,6 +120,6 @@ If everything goes right you should see something like this
 Congratulation you created your first plugin. Now to delete it simply execute
 
 ```yaml
-k3ai-cli delete --repo "<absolute path to root folder>/"
+k3ai delete --repo "<absolute path to root folder>/"
 ```
 

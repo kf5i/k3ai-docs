@@ -5,7 +5,7 @@
 In order to install H2O simply type:
 
 ```text
-k3ai-cli apply h2o-single
+k3ai apply h2o-single
 ```
 
 This will deploy a single node instance of the h2o platform.

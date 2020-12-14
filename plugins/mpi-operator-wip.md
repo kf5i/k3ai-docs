@@ -5,7 +5,7 @@
 To install the MPI operator simply type:
 
 ```text
-k3ai-cli apply mpi-op
+k3ai apply mpi-op
 ```
 
 

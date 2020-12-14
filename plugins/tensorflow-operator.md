@@ -13,7 +13,7 @@ More on the Tensorflow Operator at [**https://github.com/kubeflow/tf-operator**]
 All you have to run is:
 
 ```bash
-k3ai-cli apply tensorflow-op
+k3ai apply tensorflow-op
 ```
 
 ## Test your installation

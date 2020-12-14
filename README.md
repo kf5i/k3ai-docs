@@ -6,11 +6,63 @@ K3ai is a lightweight infrastructure-in-a-box specifically built to install and 
 
 ## Ready to experiment?
 
-We have a  utility script for you 
+All you have to do is, download the binary for your Operating System, move it to your path \(if you like easy things\), and use it.
+
+### Linux \(including Microsoft WSL\)
 
 ```text
-curl -sfL https://get-core.k3ai.in | bash -
+curl -fL "https://get.k3ai.in" -o k3ai.tar.gz
 ```
+
+once downloaded untar the file  and move it to your path
+
+```bash
+tar -xvzf k3ai.tar.gz \
+&& chmod +x ./k3ai \
+&& sudo mv ./k3ai /usr/local/bin
+```
+
+### Windows
+
+```bash
+Invoke-WebRequest -Uri "https://get-win.k3ai.in" -Ouput
+```
+
+once downloaded unzip the file and move it to your path or execute it from a folder of your choice \(i.e.: k3ai.exe -h\)
+
+```bash
+ Expand-Archive -Path .\k3ai.zip
+```
+
+### Mac
+
+```text
+curl -fL "https://get-mac.k3ai.in" -o k3ai.tar.gz
+```
+
+once downloaded untar the file  and move it to your path
+
+```bash
+tar -xvzf k3ai.tar.gz \
+&& chmod +x ./k3ai \
+&& sudo mv ./k3ai /usr/local/bin
+```
+
+### Arm64
+
+```text
+curl -fL "https://get-arm.k3ai.in" -o k3ai.tar.gz
+```
+
+once downloaded untar the file  and move it to your path
+
+```bash
+tar -xvzf k3ai.tar.gz \
+&& chmod +x ./k3ai \
+&& sudo mv ./k3ai /usr/local/bin
+```
+
+### Alternative method for Linux
 
 If for any reason it fails just go straight away to [https://github.com/kf5i/k3ai-core/releases](https://github.com/kf5i/k3ai-core/releases) and download the binary. Place it in your path and that's it.
 

@@ -9,7 +9,7 @@ We do support the current list of Jupyter Stacks as indicated in:
 In order to run Jupyter Notebooks just run the following command:
 
 ```bash
-k3ai-cli apply jupyter-minimal
+k3ai apply jupyter-minimal
 ```
 
 The following notebooks plugins are available:

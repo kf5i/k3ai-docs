@@ -24,7 +24,7 @@ You'll need an account on Civo.com. To do so simply register on Civo here:
 All you have to do is simply type:
 
 ```bash
-k3ai-cli init --cloud civo
+k3ai init --cloud civo
 ```
 
 Wait for the instance to finish the deployment
@@ -44,7 +44,7 @@ kubectl config --kubeconfig="civo-k3ai-kubeconfig"
 One last thing and then we're done:
 
 ```bash
- k3ai-cli apply <your favorite plugin>
+ k3ai apply <your favorite plugin>
 ```
 
 enjoy your k3ai on[ **https://civo.com**](https://civo.com)\*\*\*\*

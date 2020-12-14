@@ -16,7 +16,7 @@ You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to 
 As usual, let's deploy PyTorch with one single line command
 
 ```text
-k3ai-cli apply pytorch-op
+k3ai apply pytorch-op
 ```
 
 ## Test You PyTorch-Job installation
