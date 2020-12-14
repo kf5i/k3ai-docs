@@ -34,7 +34,7 @@ tar -xvzf k3ai.tar.gz \
 ### Windows
 
 ```bash
-Invoke-WebRequest -Uri "https://get-win.k3ai.in" -Ouput
+Invoke-WebRequest -Uri "https://get-win.k3ai.in" -OutFile k3ai.zip
 ```
 
 once downloaded unzip the file and move it to your path or execute it from a folder of your choice \(i.e.: k3ai.exe -h\)
