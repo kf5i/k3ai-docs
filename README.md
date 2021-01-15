@@ -75,7 +75,7 @@ Version=$(curl -s "https://api.github.com/repos/kf5i/k3ai-core/releases/latest" 
 wget https://github.com/kf5i/k3ai-core/releases/download/v$Version/k3ai-core_${Version}_linux_amd64.tar.gz
 ```
 
-Looking for more interaction? join our Slack channel [**here**](https://join.slack.com/t/k3ai/shared_invite/zt-j61vfvkx-tCD~k9l2218lu7ZplRLGNA)\*\*\*\*
+Looking for more interaction? join our Slack channel [**here**](https://join.slack.com/t/k3ai/shared_invite/zt-l3ntdqxd-b402QHswMDrd3pEuBPtPxA)\*\*\*\*
 
 ## What we do support:
 
