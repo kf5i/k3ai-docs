@@ -25,7 +25,7 @@ tar -xvzf k3ai.tar.gz \
 ### Windows
 
 ```bash
-Invoke-WebRequest -Uri "https://get-win.k3ai.in" -Ouput k3ai.zip
+Invoke-WebRequest -Uri "https://get-win.k3ai.in" -OutFile k3ai.zip
 ```
 
 once downloaded unzip the file and move it to your path or execute it from a folder of your choice \(i.e.: k3ai.exe -h\)
@@ -75,7 +75,7 @@ Version=$(curl -s "https://api.github.com/repos/kf5i/k3ai-core/releases/latest" 
 wget https://github.com/kf5i/k3ai-core/releases/download/v$Version/k3ai-core_${Version}_linux_amd64.tar.gz
 ```
 
-Looking for more interaction? join our Slack channel [**here**](https://join.slack.com/t/k3ai/shared_invite/zt-l3ntdqxd-b402QHswMDrd3pEuBPtPxA)\*\*\*\*
+Looking for more interaction? join our Slack channel [**here**](https://join.slack.com/t/k3ai/shared_invite/zt-s8p2id50-CVcFTz_bV_X57UKcnOmV9A)\*\*\*\*
 
 ## What we do support:
 
