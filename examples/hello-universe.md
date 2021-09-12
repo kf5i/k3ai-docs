@@ -67,7 +67,7 @@ Open the notebook in raw mode, select all and save it as file with .ipynb  exten
 2. Click on Upload and load the Notebook you just saved
 3. Once the Notebook has been upload it open it
 4. Execute the first cell to install KFP SDK library. This is needed to interact with Kubeflow pipelines
-5. In another tab of your browser open the Kubeflow UI \(http://&lt;YOUR CLUSTER IP&gt;:8080
+5. In another tab of your browser open the Kubeflow UI \(http://&lt;YOUR CLUSTER IP&gt;:8080)
 6. Now let's move to the cell as the one below
 
 ```python
